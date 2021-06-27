@@ -1,0 +1,130 @@
+section{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+
+}
+nav {
+    margin-top: 30px;
+    color: #a0a0a0;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding-left: 90px;
+}
+.menu-mobile {
+    display: none;
+    color: #a0a0a0;
+    font-size: 22px;
+    padding: 15px;
+    justify-content: right;
+    text-align: end;
+}
+
+.menu-mobile i {
+    font-size: 40px;
+}
+main, aside{
+    height: 500px;
+}
+main {
+    float: right;
+    width: 70%;
+    height: 500px;
+    background-image: url(assets/bg.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+aside {
+    width: 30%;
+    background-color:#fff;
+    margin-right: 25px;
+}
+
+.events{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.event-details, .event-period{
+    
+    height: 300px; 
+}
+.event-period{
+    width: 30%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+}
+.event-details{
+    width: 50%;
+    height: auto;
+    background-color: #f4dfc4;
+    color: #fff;
+}
+h1, h2, h3, p{
+    margin-left:15px;
+    margin-right: 15px;
+}
+
+button{
+    background-color: #f4dfc4;
+    color: #fff;
+    border-color: #fff;
+    font-weight: bold;
+    border-width: 2px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+    nav{
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: right;
+    }
+    section {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        height: 250px;
+    }
+
+    aside {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+        height: 200px;
+    }
+    .menu-mobile {
+        display: block;
+    
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+    .events{
+        flex-direction: column;
+        width: 100%;    
+        margin-top: 250px;
+    }
+    .event-period{
+        width: 100%;
+    }
+    .event-details{
+        width: 100%;
+    }
+}
