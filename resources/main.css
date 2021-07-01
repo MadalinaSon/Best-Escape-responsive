@@ -116,6 +116,7 @@ button{
     .menu-desktop {
         display: none;
     }
+    /* partea de events trebuia pusa in linie cu ce ai pe aside pe mobile, ce nu se intampla. ti-am adaugat un recording. te-ai blocat aici sau? */
     .events{
         flex-direction: column;
         width: 100%;    
